@@ -1,5 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.Secao-Biblioteca {
+    color: white;
+}
+
+footer {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: bold;
+    color: #804197;
+    background-color: #ede2f1;
+    height: 200px;
 }
