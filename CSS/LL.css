@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+h1{
+    color: #804197;
+}
+
 .Secao-Biblioteca {
     color: white;
+    background-image: url(https://i.pinimg.com/originals/28/66/b5/2866b58d2e1f2fd4d468512d54714dda.jpg);
 }
 
 footer {
