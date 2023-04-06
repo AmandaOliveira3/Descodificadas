@@ -13,11 +13,31 @@ h1{
     background-image: url(https://i.pinimg.com/originals/28/66/b5/2866b58d2e1f2fd4d468512d54714dda.jpg);
 }
 
+.logo-esquerda{
+    width: 50px;
+    height: 50px;
+}
+
+.Titulo-inicio{
+    color: white;
+    font-size: 54px;
+    font-weight: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.QuemSomos{
+    background-color: #ede2f1;
+    font-size: 14px;
+}
+
 footer {
-    font-family: Open Sans;
-    font-size: 12px;
+    
+    font-size: 14px;
     font-weight: bold;
     color: #804197;
     background-color: #ede2f1;
-    height: 200px;
+    height: 100px;
 }
