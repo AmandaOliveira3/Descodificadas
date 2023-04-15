@@ -33,6 +33,32 @@ h1{
     font-size: 14px;
 }
 
+.Redes-Sociais{
+    background-color: #e8f0ec;
+}
+
+.Skoob{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+}
+
+.Linkedin{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.Github{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
 footer {
     
     font-size: 14px;
