@@ -18,3 +18,12 @@ button{
     letter-spacing: .25px;
     padding: 0 24px;
 }
+
+footer {
+    
+    font-size: 14px;
+    font-weight: bold;
+    color: #804197;
+    background-color: #ede2f1;
+    height: 100px;
+}
