@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #804197;
+}
+
+.Secao-Biblioteca {
+    color: white;
+    background-image: url(https://i.pinimg.com/originals/28/66/b5/2866b58d2e1f2fd4d468512d54714dda.jpg);
+}
+
+.logo-esquerda{
+    width: 50px;
+    height: 50px;
+}
+
+.Titulo-inicio{
+    color: white;
+    font-size: 54px;
+    font-weight: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.QuemSomos{
+    background-color: #ede2f1;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 15.0pt;
+}
+
+.QuemSomos > h3{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: justify;
+    text-indent: 15.0pt;
+    color: rgba(128,65,151,1);
+}
+
+
+.QuemSomos > img{
+    width: 400px;
+    height: 400px;
+}
+/*
+.Sorteio-livro{
+
+}
+*/
+.Redes-Sociais{
+    background-color: #e8f0ec;
+}
+
+.Skoob{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+}
+
+.Linkedin{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.Github{
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+footer {
+    
+    font-size: 14px;
+    font-weight: bold;
+    color: #804197;
+    background-color: #ede2f1;
+    height: 100px;
+}
