@@ -7,30 +7,21 @@
 div {
 
     display: inline-block;
-
     border: 1px solid black;
-
     width: 200px;
-
     height: 200px;
-
-    margin: -0.1rem;
-
-    border: 1px solid #fff;
 }
 
 .vermelho {
     background-color: red;
 }
 
-#borda {
-    border: 2.5px solid black;
-    background-color: red;
-    
+.borda {
+    border: 2.5px solid black;  
 }
 
 .azul {
-    background-color: lightskyblue;
+    background-color:dodgerblue;
 
 }
 
@@ -39,5 +30,5 @@ div {
 }
 
 .verde {
-    background-color: lawngreen;
+    background-color:mediumspringgreen;
 }
