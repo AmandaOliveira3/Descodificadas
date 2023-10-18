@@ -4,21 +4,36 @@
     box-sizing: border-box;
 }
 
-
-div{
-    position: absolute;
-    background-color: yellow;
-   /* */
-    top: 50%;
-    left: 50%;
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: #F19BB8;
 }
-    
 
-img{
-    
-    border: 3px inset red; 
+#borda-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px double rgb(179, 12, 12);
 }
-/*
-p{
-    position: absolute;
-}*/ 
+.image{
+    box-shadow: inset 15px 15px 25px 5px rgb(10, 208, 40);
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./violeta.jpeg');
+    border: 20px solid slateblue;
+}
+
+.image > p{
+    font-size: 3rem;
+    font-weight: 800;
+    color: darkblue;
+    margin: 150px 40px;
+
+}
