@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+img{
+    width: 80%;
+    height: 50%;
+    animation: batimento-coracao 2s linear infinite;
+}
+
+.container > h1{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+
+.container > p{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@keyframes batimento-coracao {
+    0% {
+        transform: scale(1); 
+    }
+    20% {
+        transform: scale(1.25); 
+    }
+    40% {
+        transform: scale(1); 
+    }
+    60% {
+        transform: scale(1.25); 
+    }
+    80% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}

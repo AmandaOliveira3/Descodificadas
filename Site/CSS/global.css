@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --bg-primary-color: #ede2f1;
+  --bg-secondary-color: #e8f0ec;
+  --bg-tertiary-color: #ffffff;
+  --btn-link-bg-color: #fff;
+  --title-color: #474747;
+  --nav-bg-color: rgba(0, 0, 0, 0.3);
+  --text-color: #804197;
+  --link-color: #fff;
+  --form-bg-color: rgba(211, 211, 211, 0.06);
+  --form-field-bg-color: rgba(0, 0, 0, 0.2);
+  --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+  --text-message-error: rgb(255, 76, 76);
+
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  color: var(--text-color);
+  text-align: start;
+  background: var(--bg-tertiary-color);
+  height: 13vh;
+  padding: 6vh 7.5vw 7vh;
+}
+
+footer>p {
+  font-size: 1.0rem;
+  font-weight: 700;
+}
