@@ -11,75 +11,103 @@
 </head>
 
 <body>
-    <section>
-        <h1> Inscreva-se</h1>
-    </section>
-    <form action="" method="post">
-        <h2>Inscreva-se no LoveLivros</h2>
-        <p>Uma Rede social para amantes de livros</p>
-
-        <label>Nome*</label><br>
-        <input type="text" placeholder="sua resposta"><br>
-        <label>email*</label><br>
-        <input type="email" placeholder="sua resposta"><br>
-        <label>Idade</label><br>
-        <label>
-            <input type="checkbox">
-            14 - 18 anos
-        </label><br>
-        <label>
-            <input type="checkbox">
-            18- 24 anos
-        </label><br>
-        <label>
-            <input type="checkbox">
-            24 - 30 anos
-        </label><br>
-        <label>
-            <input type="checkbox">
-            30 - 40 anos
-        </label><br>
-        <label><input type="checkbox">
-            40 - 50 anos
-
-        </label><br>
-        <label>
-            <input type="checkbox">
-            50 - 60 anos
-
-        </label><br>
-        <label>
-            <input type="checkbox">
-            acima de 60 anos
-        </label><br>
-        <label>Qual seu(s) gênero literário favorito(s) ?</label><br>
-
-        <div>
-            <input type="radio" id="contactChoice1" name="contact" />
-            <label for="contactChoice1">Ação</label><br>
-
-            <input type="radio" id="contactChoice2" name="contact" />
-            <label for="contactChoice2">Fantasia</label><br>
-
-            <input type="radio" id="contactChoice3" name="contact" />
-            <label for="contactChoice3">Romance</label><br>
-
-            <input type="radio" id="contactChoice3" name="contact" />
-            <label for="contactChoice3">Ficção Científica</label><br>
-
-            <input type="radio" id="contactChoice3" name="contact" />
-            <label for="contactChoice3">Terror</label><br>
-
-            <input type="radio" id="contactChoice3" name="contact" />
-            <label for="contactChoice3">Mistério</label><br>
-
-            <input type="radio" id="contactChoice3" name="contact" />
-            <label for="contactChoice3">
-                Não Ficção</label><br>
-
+    <nav class="nav">
+        <div class="section-library-leftt">
+            <img class="logo-esquerda" src="img/L.png">
+            <a class="nav-page-link" href="Lovelivros.html">LoveLivros</a>
         </div>
-        <div>
-            <button type="submit">Enviar</button>
+        <ul class="section-library-right">
+            <li><a class="nav-page-link" href="Lovelivros.html">Inicio</a></li>
+            <li><a class="nav-page-link" href="Plus.html">Plus</a></li>
+            <li><a class="nav-page-link" href="Favoritos.html">Mais Favoritos</a></li>
+            <li><a class="nav-page-link" href="Inscreva.html">Inscreva-se</a></li>
+
+
+            <form class="form-flex" role="search">
+                <input class="form-search-input" type="search" placeholder="Pesquisar">
+                <button class="btn btn-submit" type="submit">Buscar</button>
+            </form>
+        </ul>
+    </nav>
+    <header class="flex header">
+        <h2 class="header-title"> Inscreva-se</h2>
+    </header>
+    <form class="flex form" action="/processar-formulario" method="post">
+        <div class="form-title--container">
+            <h2 class="form-title">Inscreva-se no LoveLivros</h2>
+            <p class="form-subtitle">Uma Rede social para amantes de livros</p>
+        </div>
+        <div class="box-border">
+            <label>Nome*</label><br>
+            <input type="text" placeholder="sua resposta" required><br>
+        </div>
+        <div class="box-border">
+            <label>email*</label><br>
+            <input type="email" placeholder="sua resposta" required><br>
+        </div>
+        <div class=" flex box-border">
+            <label>Idade</label><br>
+            <label class="label-idade">
+                <input type="radio" name="idade">
+                14 - 18 anos
+            </label><br>
+            <label>
+                <input type="radio" name="idade">
+                18- 24 anos
+            </label><br>
+            <label>
+                <input type="radio" name="idade">
+                24 - 30 anos
+            </label><br>
+            <label>
+                <input type="radio" name="idade">
+                30 - 40 anos
+            </label><br>
+            <label><input type="radio" name="idade">
+                40 - 50 anos
+
+            </label><br>
+            <label>
+                <input type="radio" name="idade">
+                50 - 60 anos
+
+            </label><br>
+            <label>
+                <input type="radio" name="idade">
+                acima de 60 anos
+            </label><br>
+        </div>
+        <div class="flex box-border">
+            <label>Qual seu(s) gênero literário favorito(s) ?</label><br>
+
+            <div>
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Ação</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Fantasia</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Romance</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Ficção Científica</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Terror</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">Mistério</label><br>
+
+                <input type="checkbox" name="contact" />
+                <label class="label-contact">
+                    Não Ficção</label><br>
+
+            </div>
+        </div>
+        <div class="flex btn-container">
+            <input class="btn-submit" type="submit" value="Enviar">
+            <button class="btn-reset" type="reset">Limpar formulário</button>
         </div>
 
     </form>

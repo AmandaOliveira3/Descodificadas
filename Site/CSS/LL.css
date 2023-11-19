@@ -1,13 +1,21 @@
-@import url("./global.css"); 
-/*
-header
-{
+@import url("./global.css");
+
+header {
     height: 58vh;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-image: url(https://i.pinimg.com/originals/28/66/b5/2866b58d2e1f2fd4d468512d54714dda.jpg);
 }
-nav{
+/*
+.title-header {
+    color: #fff;
+    font-family: Comfortaa, Arial;
+    font-weight: 400;
+    margin: auto;
+}
+
+
+.nav{
     width: 100%;
     position: fixed;
     display: flex;
@@ -15,12 +23,7 @@ nav{
     color: #fff;
 }
 
-#title-header{
-    color: #fff;
-    font-family: Comfortaa, Arial;
-    font-weight: 400;
-    margin: auto;
-}
+
 /*h1{
     color: #804197;
 }
@@ -29,8 +32,8 @@ nav{
     width: 50px;
     height: 50px;
 }
-
-.Titulo-inicio{
+*/
+.title-header{
     color: white;
     font-size: 54px;
     font-weight: none;
@@ -39,7 +42,7 @@ nav{
     align-items: center;
     padding: 30px;
 }
-
+/*
 .QuemSomos{
     background-color: #ede2f1;
     font-size: 14px;
