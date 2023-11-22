@@ -1,106 +1,264 @@
 @import url("./global.css");
 
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
 header {
+    display: flex;
+    align-items: center;
     height: 58vh;
     background-position: center center;
     background-size: cover;
     background-image: url(https://i.pinimg.com/originals/28/66/b5/2866b58d2e1f2fd4d468512d54714dda.jpg);
 }
-/*
+
 .title-header {
     color: #fff;
-    font-family: Comfortaa, Arial;
+    font-family: "Comfortaa", Arial;
     font-weight: 400;
-    margin: auto;
+    text-align: left;
+    font-size: 60pt;
+    padding: 12vw;
 }
 
-
-.nav{
+section {
     width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
 }
 
-
-/*h1{
-    color: #804197;
-}
-
-.logo-esquerda{
-    width: 50px;
-    height: 50px;
-}
-*/
-.title-header{
-    color: white;
-    font-size: 54px;
-    font-weight: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-/*
-.QuemSomos{
-    background-color: #ede2f1;
-    font-size: 14px;
+.quem-somos {
+    background-color: var(--bg-primary-color);
     font-weight: 500;
     text-align: justify;
-    text-indent: 15.0pt;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    height: 58vh;
+    gap: 40px;
 }
 
-.QuemSomos > h3{
-    font-size: 17px;
+.quem-somos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    word-spacing: 3px;
+    width: 50%;
+    padding-top: 20px;
+    gap: 2vh;
+}
+
+.quem-somos-Title {
+    font-size: 18pt;
     font-weight: 700;
-    text-align: justify;
-    text-indent: 15.0pt;
-    color: rgba(128,65,151,1);
+    font-family: "Lato", 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
 }
 
-
-.QuemSomos > img{
-    width: 400px;
-    height: 400px;
+.quem-somos-content>p {
+    font-family: "Lora", 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #212121;
+    font-family: Lora, Arial;
+    font-size: 14pt;
+    font-weight: 500;
+    vertical-align: baseline;
+    line-height: 1.5;
 }
-/*
-.Sorteio-livro{
+
+.quem-somos-image {
+    width: 50vh;
+}
+
+.Sorteio {
+    background-color: var(--bg-tertiaty-color);
+    padding: 1.5rem 0;
 
 }
 
-.Redes-Sociais{
+.Sorteio-Title {
+    text-align: center;
+    font-family: "Poppins", Arial;
+    font-weight: 600;
+    font-size: 34pt;
+}
+
+.sorteio-container {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Sorteio-livro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 23%;
+}
+
+.Sorteio-livro>img {
+    width: 100%;
+}
+
+.Titulo-Sorteio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    text-align: left;
+}
+
+.Sorteio-btn {
+    background: var(--text-color);
+    color: var(--btn-link-bg-color);
+    padding: 0.6rem 4.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.Sorteio-livro:nth-child(1),
+.Sorteio-livro:nth-child(2) {
+    justify-content: end;
+    gap: 30px;
+}
+
+.section-book {
+    background-color: var(--bg-primary-color);
+    padding: 1.5rem;
+}
+
+.book-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    width: min(55%, 1280px);
+}
+
+.section-book--title {
+    text-align: center;
+    font-family: "Lato", Arial;
+    font-weight: 600;
+    font-size: 30pt;
+    color: var(--text-color);
+    line-height: 1.38;
+}
+
+.book-information>img {
+    width: 100%;
+}
+
+.section-book--tbn {
+    background: var(--text-color);
+    color: var(--btn-link-bg-color);
+    padding: 0.6rem 7.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.section-videos {
+    background: var(--bg-secondary-color);
+    padding: 20px 168px;
+}
+
+.section-videos--title {
+    color: var(--text-color);
+    font-family: "Poppins", Arial;
+    font-weight: 600;
+    font-size: 34pt;
+}
+
+.section-videos--text {
+    color: var(--text-color);
+    font-family: "Poppins", Arial;
+    font-weight: 400;
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.section-maps {
+    background: var(--bg-primary-color);
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+.section-maps--title {
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Poppins", Arial;
+    font-size: 34pt;
+}
+
+.iframe-video {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.section-maps>iframe {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.Redes-Sociais {
+    background-color: var(--bg-secondary-color);
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.Redes-Sociais h1 {
+    padding: 1.5rem 0;
+}
+
+.link-sing--up {
+    background: var(--text-color);
+    color: var(--btn-link-bg-color);
+    padding: 0.6rem 7.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    align-self: center;
+    margin: 1.5rem;
+}
+
+.link-sing--up:hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+.container-social {
+    display: flex;
+    gap: 6px;
+}
+
+.Redes-Sociais {
     background-color: #e8f0ec;
 }
 
-.Skoob{
-    width: 32px;
-    height: 32px;
-    margin: 6px;
-}
-
-.Linkedin{
-    width: 32px;
-    height: 32px;
-    margin: 6px;
-    display: inline-block;
-    border-radius: 50%;
-}
-
-.Github{
-    width: 32px;
-    height: 32px;
-    margin: 6px;
-    display: inline-block;
-    border-radius: 50%;
-}
-
-footer {
-    
-    font-size: 14px;
-    font-weight: bold;
-    color: #804197;
-    background-color: #ede2f1;
+.Skoob {
+    width: 100px;
     height: 100px;
+    margin: 6px;
+    background-color: #fff;
+    width: 100%;
 }
-*/
+
+.Linkedin, .Skoob, .Github{
+    border-radius: 50%;
+}
+
+.Github {
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 50%;
+}
