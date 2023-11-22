@@ -61,19 +61,18 @@
 .section-library-right li {
   display: inline-block;
   margin-right: 14pt;
-  font-size: 12pt;
+  font-size: clamp(0.5rem, 3vw, 1rem);
   color: #fff;
-  max-width: 300px;
   transition: opacity 0.5s ease-in-out;
 }
 
 
-.section-library-right > li:hover { 
+.section-library-right>li:hover {
   cursor: pointer;
   opacity: 0.7;
 }
 
-.logo-direita{
+.logo-direita {
   height: 18px;
   width: 20px;
 }
@@ -89,6 +88,20 @@
   color: #fff;
 }
 
+.hamburguer {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
 footer {
   color: var(--text-color);
   text-align: start;
@@ -100,4 +113,32 @@ footer {
 footer>p {
   font-size: clamp(0.5rem, 3vw, 1rem);
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+
+  .section-library-right {
+    display: flex;
+    position: fixed;
+    right: -100%;
+    top: 50px;
+    width: 35%;
+    background-color: #252525;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.7s;
+    gap: 18px;
+  }
+
+  .logo-direita{
+    display: none;
+  }
+
+  .section-library-right.active {
+    right: 0;
+  }
 }

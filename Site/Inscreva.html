@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 <body>
     <nav class="nav">
         <div class="flex section-library-left">
-            <img class="logo-esquerda" src="img/L.png">
+            <img class="logo-esquerda" src="img/L.png" alt="logo da love livros">
             <a class="nav-page-link" href="Lovelivros.html">LoveLivros</a>
         </div>
         <ul class="section-library-right">
@@ -21,8 +21,15 @@
             <li><a class="nav-page-link" href="Plus.html">Plus</a></li>
             <li><a class="nav-page-link" href="Favoritos.html">Mais Favoritos</a></li>
             <li><a class="nav-page-link" href="Inscreva.html">Inscreva-se</a></li>
-            <li> <img class="logo-direita" src="./img/lupa.png"> </li>
+            <li> <img class="logo-direita" src="./img/lupa.png" alt="icone de lupa"> </li>
         </ul>
+
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <header class="flex header">
         <h2 class="header-title"> Inscreva-se</h2>
@@ -31,14 +38,15 @@
         <div class="form-title--container">
             <h2 class="form-title">Inscreva-se no LoveLivros</h2>
             <p class="form-subtitle">Uma Rede social para amantes de livros</p>
+            <p class="form-advice">* Indica uma pergunta obrigatória</p>
         </div>
         <div class="box-border">
-            <label>Nome*</label><br>
-            <input type="text" placeholder="sua resposta" required><br>
+            <label class="label-nome">Nome</label><br>
+            <input type="text" name="Nome" placeholder="sua resposta" required><br>
         </div>
         <div class="box-border">
-            <label>email*</label><br>
-            <input type="email" placeholder="sua resposta" required><br>
+            <label class="label-email">email</label><br>
+            <input type="email" name="email" placeholder="sua resposta" required><br>
         </div>
         <div class=" flex box-border">
             <label>Idade</label><br>
@@ -51,9 +59,7 @@
                 18- 24 anos
             </label><br>
             <label>
-                <input type="radio" name="idade">
-                24 - 30 anos
-            </label><br>
+                <input type="radio" name="idade">24 - 30 anos</label><br>
             <label>
                 <input type="radio" name="idade">
                 30 - 40 anos
@@ -109,6 +115,7 @@
     <footer>
         <p> Criado por Amanda Oliveira para o Descodificadas 2023.2</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
