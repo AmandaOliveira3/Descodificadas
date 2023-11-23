@@ -155,7 +155,7 @@ section {
     width: 100%;
 }
 
-.section-book--tbn {
+.section-book--btn {
     background: var(--text-color);
     color: var(--btn-link-bg-color);
     padding: 0.6rem 7.5rem;
@@ -283,6 +283,14 @@ section {
 
 
 @media screen and (max-width: 868px) {
+
+    
+    .title-header{
+        font-size: 48px;
+    }
+    .Sorteio-Title , .section-book--title{
+        font-size: 32px;
+    }
     .quem-somos {
         flex-direction: column;
         justify-content: center;
@@ -300,5 +308,34 @@ section {
 
     .quem-somos-image{
         width: 80%;
+    }
+
+    .sorteio-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Sorteio-btn{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .Sorteio-livro{
+        width: 100%;
+    }
+
+    .section-book--btn{
+        font-size: 14px;
+        padding: 0.6rem 3.6rem;
+        width: 100%;
+    }
+
+    .section-videos{
+        padding: 20px;
+    }
+
+    .iframe-video{
+        margin: auto;
     }
 }
