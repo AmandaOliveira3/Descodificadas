@@ -34,8 +34,7 @@ section {
     text-align: justify;
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
-    height: 58vh;
+    padding: 1.5rem 3rem;
     gap: 40px;
 }
 
@@ -47,7 +46,7 @@ section {
     word-spacing: 3px;
     width: 50%;
     padding-top: 20px;
-    gap: 2vh;
+    gap: 30px;
 }
 
 .quem-somos-Title {
@@ -65,6 +64,7 @@ section {
     font-weight: 500;
     vertical-align: baseline;
     line-height: 1.5;
+    text-indent: 20px;
 }
 
 .quem-somos-image {
@@ -167,7 +167,10 @@ section {
 
 .section-videos {
     background: var(--bg-secondary-color);
-    padding: 20px 168px;
+    padding: 20px 20vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .section-videos--title {
@@ -182,8 +185,19 @@ section {
     font-family: "Poppins", Arial;
     font-weight: 400;
     font-size: 14pt;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.section-videos--iframe {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-videos>iframe {
+    width: 100%;
 }
 
 .section-maps {
@@ -206,6 +220,7 @@ section {
 }
 
 .section-maps>iframe {
+    width: 80%;
     align-self: center;
     margin: 0 auto;
 }
@@ -251,7 +266,9 @@ section {
     width: 100%;
 }
 
-.Linkedin, .Skoob, .Github{
+.Linkedin,
+.Skoob,
+.Github {
     border-radius: 50%;
 }
 
@@ -261,4 +278,27 @@ section {
     margin: 6px;
     display: inline-block;
     border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 868px) {
+    .quem-somos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quem-somos-content {
+        width: 100%;
+    }
+
+    .quem-somos-content>p {
+        margin-top: 10px;;
+        font-size: 12pt;
+    }
+
+    .quem-somos-image{
+        width: 80%;
+    }
 }
